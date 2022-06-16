@@ -1,9 +1,0 @@
-Id;
-Summary;
-Steps to reproduce;
-Expected result;
-actual result;
-[A[3~A[Environment;
-Priority;
-Severity;
-Attachments.
