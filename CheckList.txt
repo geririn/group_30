@@ -1,4 +1,0 @@
-Id;
-Tester Actions;
-Actual result;
-Comments.
