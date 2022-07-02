@@ -12,16 +12,16 @@ const exponentiation = function(exponent) {
 exponentiation(2);
 
 let smile = ":)";
-let m = [];
+let m = '';
 for (let i = 0; i < 5; i++) {
-    m[i] = smile; 
+    m += smile; 
     console.log(m);
 }
 
 const printSmile = function(stroka, numberOfRows) {
-    let m = [];
+    let m = '';
     for (let i = 0; i < numberOfRows; i++) {
-        m[i] = stroka; 
+        m += stroka; 
         console.log(m);
     }
 }
@@ -53,11 +53,12 @@ getWordStructure("Case");
 getWordStructure("Check-list");
 
 const isPalindrom = function(word) {
-        let wordReverse = String(word).split("").reverse("").join("")
-        if (String(word).toLowerCase() == wordReverse.toLowerCase()) {
+        let wordLetters = word.replace(/[^a-zа-яё\s]/gi, '')
+        let wordReverse = String(wordLetters).split("").reverse("").join("")
+        if (String(wordLetters).toLowerCase() == wordReverse.toLowerCase()) {
             console.log(word, "It's a palindrom");
         } else {
             console.log(word, "It's not a palindrom");
         }
 }
-isPalindrom("Abba");
+isPalindrom("Abb-a");
